@@ -3,44 +3,19 @@ class all_data():
 
 class RCA():
 
-    def weight(self, weight):
-        return self.weight()
+    def __init__(self):
+        self.weight = 0
+        self.phi_BV=0
+        self.phi_GV = 0
+        self.phi_Ka = 0
+        self.phi_GD = 0
+        self.plug_depth =0
+        self.dtime = ""
+        self.well =""
 
-    def gv(self,a):
-        pass
-
-    def bv(self):
-        pass
-
-    def pv(self):
-        pass
-
-    def phi_bv(self):
-        pass
-
-    def phi_pv(self):
-        pass
-
-    def phi_ob(self):
-        pass
-
-    def ka(self):
-        pass
-
-    def ka_ob(self):
-        pass
-
-    def plug_id(self):
-        pass
-
-    def plug_depth(self):
-        pass
-
-    def well(self):
-        pass
-
-    def dtime(self):
-        pass
 
     def id(self):
-        self.plug_depth + self.well + self.dtime
+        return '{} {} {}'.format(self.plug_depth, self.well, self.dtime)
+
+    def all_rca(self):
+        return '{} {} {}'.format(self.plug_depth, self.well, self.dtime)
