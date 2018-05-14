@@ -61,5 +61,6 @@ def write_csv(writeto, writewhat):
     csvfile.close()
 
 
-if __name__ == "__main__":
-    rca_data()
+rca_data()
+
+
